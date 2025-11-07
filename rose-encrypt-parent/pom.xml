@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.github.rosestack</groupId>
+        <artifactId>rose-encrypt</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>io.github.rosestack</groupId>
+    <artifactId>rose-encrypt-parent</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <name>Rose :: Encrypt :: Parent</name>
+    <description>Rose Encrypt Parent</description>
+
+    <properties>
+        <rose-java.version>0.0.3-SNAPSHOT</rose-java.version>
+        <rose-spring.version>0.0.3-SNAPSHOT</rose-spring.version>
+        <rose-spring-boot.version>0.0.3-SNAPSHOT</rose-spring-boot.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.github.rosestack</groupId>
+                <artifactId>rose-java-bom</artifactId>
+                <version>${rose-java.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.rosestack</groupId>
+                <artifactId>rose-spring-bom</artifactId>
+                <version>${rose-spring.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.rosestack</groupId>
+                <artifactId>rose-spring-boot-bom</artifactId>
+                <version>${rose-spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

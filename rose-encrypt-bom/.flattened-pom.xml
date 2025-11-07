@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.rosestack</groupId>
+    <artifactId>rose-encrypt-parent</artifactId>
+    <version>0.0.3-SNAPSHOT</version>
+    <relativePath>../rose-encrypt-parent/pom.xml</relativePath>
+  </parent>
+  <groupId>io.github.rosestack</groupId>
+  <artifactId>rose-encrypt-bom</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Rose :: Encrypt :: Bom</name>
+  <description>Rose Encrypt Bom</description>
+  <url>https://github.com/rosestack/rose-java/rose-encrypt-parent/rose-encrypt-bom</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>chensoul</id>
+      <name>Chensoul</name>
+      <email>ichensoul@gmail.com</email>
+      <organization>RoseStack</organization>
+      <roles>
+        <role>lead</role>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/rosestack/rose-encrypt.git/rose-encrypt-parent/rose-encrypt-bom</connection>
+    <developerConnection>scm:git:ssh://git@github.com/rosestack/rose-encrypt.git/rose-encrypt-parent/rose-encrypt-bom</developerConnection>
+    <url>https://github.com/rosestack/rose-encrypt/rose-encrypt-parent/rose-encrypt-bom</url>
+  </scm>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.github.rosestack</groupId>
+        <artifactId>rose-encrypt-core</artifactId>
+        <version>${revision}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
